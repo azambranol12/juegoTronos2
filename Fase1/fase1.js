@@ -1,7 +1,7 @@
-import Personaje from "./Clases/Personaje.js";
-import Casa from "./Clases/Casa.js";
-import Reino from "./Clases/Reino.js";
-import Arma from "./Clases/Arma.js";
+import Personaje from "./Fase1/Clases/Personaje.js";
+import Casa from "./Fase1/Clases/Casa.js";
+import Reino from "./Fase1/Clases/Reino.js";
+import Arma from "./Fase1/Clases/Arma.js";
 
 let reinoPrincipal = new Reino("Poniente");
 let familiaLannister = new Casa("Casa Lannister", "Un Lannister siempre paga sus deudas");
