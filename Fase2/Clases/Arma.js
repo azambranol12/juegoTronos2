@@ -23,7 +23,7 @@ class Arma{
     }
 
     getDaño(){
-        return this.#nombre;
+        return this.#daño;
     }
 
     setTipo(tipo){

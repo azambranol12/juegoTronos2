@@ -1,5 +1,5 @@
-import Personaje from "./Fase2/Clases/Personaje.js";
-import Arma from "./Fase2/Clases/Arma.js";
+import Personaje from "../Personaje.js";
+import Arma from "../Arma.js";
 
 class Guerrero extends Personaje{
 
@@ -10,7 +10,7 @@ class Guerrero extends Personaje{
         if(arma instanceof Arma)
         {
             this.#arma = arma;
-            console.log($this.getNombre()+ " ha equipado el arma " + arma.getNombre());
+            console.log(this.getNombre()+ " ha equipado el arma " + arma.getNombre());
         }else{
             console.log("Debe ser una instancia de Arma")
         }
@@ -29,7 +29,7 @@ class Guerrero extends Personaje{
     // Muestra el arma del personaje si la tiene
     verArma() {
         if (this.#arma == null) {
-            console.log("Este personaje aun no tiene un arma");
+            console.log("Este personaje no tiene un arma tonto");
         } else {
             return this.#arma;
         }
@@ -42,3 +42,5 @@ class Guerrero extends Personaje{
         console.log(this.getNombre() + " entrena hasta el cansancio para su próxima batalla."); 
     }
 }
+
+export default Guerrero;

@@ -21,8 +21,9 @@ class Casa{
     }
     
     getFrase() {
-        console.log(this.#frase);
+        return this.#frase;
     }
+
 
     setFrase(frase) {
         this.#frase = frase;

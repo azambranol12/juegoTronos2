@@ -18,11 +18,11 @@ class Consejero extends Personaje{
     }
 
     luchar(){
-        console.log($this.getNombre()+" no lucha con armas, si no con palabras e inteligencia.");
+        console.log(this.getNombre() + " no lucha con armas, sino con palabras e inteligencia.");
     }
 
     aconsejar(rey){
-        console.log($this.getNombre()+" aconseja a ${rey.getNombre()} con su sabiduria en "+ $this.#especialidad+".");
+        console.log(this.getNombre() + " aconseja a " + rey.getNombre() + " con su sabiduría en " + this.#especialidad + ".");
     }
 
 }
