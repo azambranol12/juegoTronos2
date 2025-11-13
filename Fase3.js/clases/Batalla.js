@@ -50,9 +50,18 @@ class Batalla {
             guerrerosB = nuevosGuerrerosB;
 
             // Mostrar estado actual
-            console.log("\nEstado actual:");
-            console.log("Guerreros A: " + guerrerosA.map(g => g.getNombre()).join(", "));
-            console.log("Guerreros B: " + guerrerosB.map(g => g.getNombre()).join(", "));
+            const nombresA = [];
+            for (const g of guerrerosA) {
+            nombresA.push(g.getNombre());
+            }
+
+            const nombresB = [];
+            for (const g of guerrerosB) {
+            nombresB.push(g.getNombre());
+            }
+
+            console.log("Guerreros A: " + nombresA.join(", "));
+            console.log("Guerreros B: " + nombresB.join(", "));
         }
 
         // Determinar ganador
